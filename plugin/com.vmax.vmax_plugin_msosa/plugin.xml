@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin
+    id="com.vmax.vmax_plugin_msosa"
+    name="vmax_plugin_msosa"
+    version="0.0.1"
+    provider-name="Maximilian Weigand"
+    class="com.vmax.vmax_plugin_msosa.PluginVmaxImpl">
+    <runtime>
+        <library name="vmax_plugin_msosa-0.0.1.jar"/>
+        <library name="vmax_core-0.0.1.jar"/>
+        <library name="jena-fuseki-fulljar-5.1.0.jar"/>
+        <library name="jena-fuseki-access-5.1.0.jar"/>
+        <library name="jena-fuseki-main-5.1.0.jar"/>
+    </runtime>
+</plugin>

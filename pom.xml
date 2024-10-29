@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.vmax</groupId>
+    <artifactId>vmax_plugin_msosa</artifactId>
+    <version>0.0.1</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <!-- specify the lib folder of MSOSA (usually /Applications/Magic Systems of Systems Architect/lib) -->
+        <toolDirectory>/Applications/Magic Systems of Systems Architect/lib</toolDirectory>
+        <!-- specify the folder where the generic vmax implementation is build -->
+        <vmaxCoreDirectory>TBD</vmaxCoreDirectory>
+    </properties>
+    <dependencies>
+        <!-- vmax dependency -->
+        <dependency>
+            <groupId>com.vmax</groupId>
+            <artifactId>vmax_core</artifactId>
+            <version>0.0.1</version>
+            <scope>system</scope>
+            <systemPath>${vmaxCoreDirectory}/target/vmax_core-0.0.1.jar</systemPath>
+        </dependency>
+        <!-- json for vmax dependency to work -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20230618</version>
+        </dependency>
+        <!-- MSOSA dependencies -->
+        <dependency>
+            <groupId>com.nomagic</groupId>
+            <artifactId>com.dassault_systemes.modeler.foundation-2024.0.0-86-7321dda1</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${toolDirectory}/com.dassault_systemes.modeler.foundation-2024.0.0-86-7321dda1.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.nomagic</groupId>
+            <artifactId>com.nomagic.magicdraw.foundation-2024.0.0-86-7321dda1</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${toolDirectory}/com.nomagic.magicdraw.foundation-2024.0.0-86-7321dda1.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.nomagic</groupId>
+            <artifactId>com.nomagic.magicdraw.modeling-2024.0.0-86-7321dda1</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${toolDirectory}/com.nomagic.magicdraw.modeling-2024.0.0-86-7321dda1.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.nomagic</groupId>
+            <artifactId>com.nomagic.magicdraw.uml2-2024.0.0-86-7321dda1</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${toolDirectory}/com.nomagic.magicdraw.uml2-2024.0.0-86-7321dda1.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.nomagic</groupId>
+            <artifactId>com.nomagic.utils-2024.0.0-86-7321dda1</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${toolDirectory}/com.nomagic.utils-2024.0.0-86-7321dda1.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.nomagic</groupId>
+            <artifactId>common-2024.0.0-86-7321dda1</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${toolDirectory}/common-2024.0.0-86-7321dda1.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.nomagic</groupId>
+            <artifactId>javax.jmi-1.0</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${toolDirectory}/javax.jmi-1.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.nomagic</groupId>
+            <artifactId>md_api</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${toolDirectory}/md_api.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.nomagic</groupId>
+            <artifactId>org.eclipse.emf.common-2.28.0</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${toolDirectory}/org.eclipse.emf.common-2.28.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.nomagic</groupId>
+            <artifactId>org.eclipse.emf.ecore-2.33.0</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${toolDirectory}/org.eclipse.emf.ecore-2.33.0.jar</systemPath>
+        </dependency>
+    </dependencies>
+</project>
