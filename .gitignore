@@ -1,0 +1,6 @@
+target/
+plugin/com.vmax.vmax_plugin_msosa/*.jar
+.vscode/**
+**/.DS_Store
+**/Thumbs.db
+evaluation/**
